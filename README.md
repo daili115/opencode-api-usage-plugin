@@ -21,16 +21,28 @@ Prompt: 1500  |  Completion: 800  |  Cost: $0.0234
 
 ## Installation
 
-### Method 1: AI Auto-Install (Recommended)
+### Method 1: One-Line Install (Recommended)
+
+```bash
+curl -sSL https://raw.githubusercontent.com/daili115/opencode-api-usage-plugin/main/install.sh | bash
+```
+
+This will automatically:
+1. Download the plugin file
+2. Backup your `editor.go`
+3. Apply all necessary modifications
+4. Verify compilation
+
+### Method 2: AI Auto-Install
 
 Copy the prompt from [INSTALL.md](INSTALL.md) into OpenCode's input box, and the AI will automatically install the plugin for you.
 
-### Method 2: Manual Install
+### Method 3: Manual Install
 
 1. Copy `api_usage.go` to `internal/tui/components/chat/api_usage.go`
 2. Follow the integration steps in [integration-guide.md](integration-guide.md)
 
-### Method 3: Quick Install
+### Method 4: Quick Install
 
 ```bash
 # Download plugin file
@@ -59,6 +71,7 @@ go run example.go
 | `example.go` | Standalone demo |
 | `integration-guide.md` | Detailed integration guide |
 | `INSTALL.md` | AI auto-install prompt |
+| `install.sh` | One-line install script |
 
 ## Requirements
 
